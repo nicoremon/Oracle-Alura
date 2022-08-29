@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia Edades</title>
+</head>
+<body>
+    
+    <script>
+        function saltarLinea(){ 
+            document.write("<br>");
+        }
+        
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea(); // Llamada a funcion saltar linea
+        }
+
+        var edadNico = 35;
+        var edadAnto = 34;
+        var edadMaxi = 30;
+        var edadLau = 25;
+        var edadTo = 22;
+
+        imprimir("<h2>Diferencia de Edades con mis Hermanos!</h2>");
+
+        imprimir("La edad de Nico es: " + edadNico);
+        imprimir("La edad de Anto es: " + edadAnto);
+        imprimir("La edad de Maxi es: " + edadMaxi);
+        imprimir("La edad de Lau es: " + edadLau);
+        imprimir("La edad de To es: " + edadTo);
+
+        imprimir("");
+        imprimir("La diferencia de edad Entre Nico y Anto es: " + (edadNico-edadAnto) + " Año");
+        imprimir("La diferencia de edad Entre Nico y Maxi es: " + (edadNico-edadMaxi) + " Años");
+        imprimir("La diferencia de edad Entre Nico y Lau es: " + (edadNico-edadLau) + " Años");
+        imprimir("La diferencia de edad Entre Nico y Toto es: " + (edadNico-edadTo) + " Años");
+        imprimir("");
+        imprimir("El promedio de nuestras Edades es: " + (edadNico+edadAnto+edadMaxi+edadLau+edadTo)/5);
+        
+    </script>
+
+</body>
+</html>

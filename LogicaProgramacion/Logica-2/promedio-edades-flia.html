@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Edades Flia</title>
+</head>
+<body>
+    <h1>Promedio Edades Flia</h1>
+
+    <script>
+
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su Familia"));
+        var contador = 1;
+        var totalEdades = 0;
+
+        while (contador <= numeroMiembros) {
+            
+            edad = parseInt(prompt("Ingrese la edad del familiar"));
+            totalEdades = totalEdades + edad;
+            contador++;
+            
+        }
+        
+        imprimir("El promedio de edades de la flia es: " + totalEdades/numeroMiembros);
+        
+    </script>
+</body>
+</html>

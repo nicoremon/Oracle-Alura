@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables y Funciones</title>
+</head>
+<body>
+    
+    <script>
+        function saltarLinea(){ 
+            document.write("<br><br>");
+        }
+        
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea(); // Llamada a funcion saltar linea
+        }
+
+        imprimir("Hola Bro!");
+
+        var anho = 2022;
+        
+        // Este codigo calcula las edades de Juan, Pedro y Carlos
+
+        imprimir("Juan tiene: " + (anho-2000) + " años");
+
+        imprimir("Pedro tiene: " + (anho-1995) + " años");
+
+        anho = 2030;
+
+        imprimir("Carlos tiene: " + (anho-2005) + " años");
+
+    </script>
+
+</body>
+</html>

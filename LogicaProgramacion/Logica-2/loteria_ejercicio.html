@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+</head>
+<body>
+    <h1>Loteria</h1>
+
+    <script>
+
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+
+        function sorteo(n){
+            return Math.round(Math.random()*n);
+        }
+
+        var numeroSolicitado = parseInt(prompt("Ingrese un Numero del 0 al 10"));
+        var numeroSistema = sorteo(10);
+        
+        if (numeroSistema == numeroSolicitado) {
+            imprimir("Usted Acerto el numero");
+        } else if (numeroSolicitado > numeroSistema) {
+            imprimir("Usted erró. El numero del sistema era menor que el elejido")
+        } else  {
+            imprimir("Usted erró. El numero del sistema era mayor que el elejido");
+        }
+        
+    </script>
+</body>
+</html>

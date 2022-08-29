@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Pares</title>
+</head>
+<body>
+    <h1>Muestra Numeros pares entre 0 y 100</h1>
+
+    <script>
+
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var numeroInicio = 0;
+        var numeroFin = 100;
+        var numeroParAcumulado = 0;
+
+        while (numeroInicio <= numeroFin){
+            
+            imprimir(numeroParAcumulado);
+            numeroParAcumulado = numeroInicio + 2;
+            numeroInicio = numeroInicio + 2;
+        }
+
+        // Forma mas simple de hacerlo es..
+
+        var contador = 2;
+
+        while (contador <= 100){
+            imprimir(contador);
+            contador = contador + 2;
+        }
+
+        imprimir("FIN");
+                
+    </script>
+</body>
+</html>

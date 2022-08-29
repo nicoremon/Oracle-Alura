@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <h1>Inicio Sesion</h1>
+
+    <script>
+
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var usuarioRegistrado = "nico";
+        var contrasenaRegistrada = "1234";
+
+        var intentos = 3;
+        var contador = 1;
+
+        while (contador <= intentos){
+
+            var usuarioIngresado = prompt("Ingrese Usuario");
+            var contrasenaIngresada = prompt("Ingrese Contraseña");
+
+            if (usuarioIngresado == usuarioRegistrado && contrasenaIngresada == contrasenaRegistrada ) {
+                alert("Bienvenido al Sistema " + usuarioIngresado);
+                break;
+
+            } else {
+                alert("Usuario o contraseña Invalidos, uso " + contador + " de 3 intentos");
+            }
+
+            contador++;
+        } 
+        
+        imprimir("Fin");
+    </script>
+</body>
+</html>
