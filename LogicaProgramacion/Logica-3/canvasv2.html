@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase-2</title>
+</head>
+<body>
+    <canvas width="600px" height="400"></canvas>
+
+    <script>
+        function dibujarCuadrado(x,y, color){
+            // Conecta Cavnas con la variable pantalla
+            var pantalla = document.querySelector("canvas");
+            // Traiga todo el contenido de pantalla en 2 dimensiones
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle = color;
+            pincel.fillRect(x,y,50,50);
+            pincel.strokeStyle = "black"; // Definimos tipo de linea (borde)
+            pincel.strokeRect(x,y,50,50); // Dibujamos cuadrado con lineas negras
+        }
+        
+        // // Dibujamos bandera con While
+        // var x = 0;
+        // while(x < 600){
+        //     dibujarCuadrado(x,0,"red");
+        //     dibujarCuadrado(x,50,"yellow");
+        //     dibujarCuadrado(x,100,"green");
+        //     x = x + 50;
+        // }
+        
+        // Dibujamos bandera con For
+        for (let x =0; x < 600; x = x +50){
+            dibujarCuadrado(x,0,"red");
+            dibujarCuadrado(x,50,"yellow");
+            dibujarCuadrado(x,100,"green");
+        }
+                
+    </script>
+</body>
+</html>
