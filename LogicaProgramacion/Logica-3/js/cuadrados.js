@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase-2</title>
-</head>
-<body>
-    <canvas width="600px" height="400"></canvas>
-
-    <script>
         function dibujarCuadrado(x,y, color){
             // Conecta Cavnas con la variable pantalla
             var pantalla = document.querySelector("canvas");
@@ -37,7 +25,3 @@
             dibujarCuadrado(x,50,"yellow");
             dibujarCuadrado(x,100,"green");
         }
-                
-    </script>
-</body>
-</html>
