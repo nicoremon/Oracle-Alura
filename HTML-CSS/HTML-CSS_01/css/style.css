@@ -1,0 +1,167 @@
+header{
+    background-color: #BBB;
+    padding: 20px 0;
+}
+.caja {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+}
+
+nav {
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding-top: 110px;
+}
+nav li{
+    display: inline;
+}
+nav a {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 10px;
+}
+nav a:hover {
+    color: #c78c79;
+    text-decoration: underline;
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+main li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+main li:hover {
+    border-color: #c78c79;
+}
+main li:hover h2 {
+    font-size: 33px;
+}
+main li:active {
+    border-color: #088c19;
+}
+main h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.servicio-descripcion {
+    font-size: 13px;
+}
+.servicio-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* CSS Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+}
+footer p {
+    color: #FFF;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* Contacto */
+form {
+    margin: 30px 0;
+}
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.input-block {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;    
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+table {
+    margin: 40px 40px;
+}
+thead {
+    background: #555;
+    color: #FFF;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+/* CSS para Home */
+.banner {
+    width: 100%;
+}
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0 0.5em;
+    clear: left;
+}
+.principal p {
+    margin: 0 0 1em;
+}
+.principal strong {
+    font-weight: bold;
+}
+#mision {
+    font-style: italic;
+}
+.utensillos {
+    width: 120px;
+    float: left;
+    margin: 0 15px 20px 0;
+}
+.imgDiferencial{
+    width: 60%;
+}
+.diferenciales ul {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 30px;
+    border-color: #000;
+    border-width: 0px;
+    border-style: none;
+    border-radius: 0px;
+}
